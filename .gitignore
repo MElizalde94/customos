@@ -1,0 +1,33 @@
+# Build artifacts
+*.o
+*.bin
+*.iso
+*.elf
+
+# Build directories
+isodir/
+build/
+
+# Docker
+.docker/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Debug files
+*.map
+*.lst
+*.sym
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# QEMU files
+qemu.log

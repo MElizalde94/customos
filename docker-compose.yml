@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  os-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: customos-builder
+    volumes:
+      - .:/os
+    working_dir: /os
+    command: /bin/bash -c "chmod +x /os/build-in-docker.sh && /os/build-in-docker.sh"
+    stdin_open: true
+    tty: true
